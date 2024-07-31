@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management</title>
+    <style>
+        /* Basic CSS Syntax */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://e0.pxfuel.com/wallpapers/995/796/desktop-wallpaper-pics-technology-best-science-attractive-background.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Header Styling */
+        header {
+            background:#0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #004494;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #003d7a;
+        }
+
+        /* Main Content Styling */
+        .container {
+            padding: 20px;
+        }
+
+        /* Section Styling */
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-image: url('your-section-background-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-blur: 5px;
+            color: #333;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #0056b3;
+            margin-top: 0;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* List Styling */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        /* CSS3 Selectors */
+        .highlight {
+            background-color: #e7f0ff;
+        }
+
+        .bordered {
+            border: 2px solid #0056b3;
+            padding: 10px;
+        }
+
+        /* Pseudo-classes */
+        a:visited {
+            color: #6c757d;
+        }
+
+        a:active {
+            color: #0056b3;
+        }
+
+        a:hover {
+            color: #004494;
+        }
+
+        /* Pseudo-elements */
+        p::first-line {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        /* Form Styling */
+        form {
+            display: inline;
+        }
+
+        input[type="number"] {
+            padding: 5px;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #003d7a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Finance Management</h1>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#budget">Budget</a>
+        <a href="#expenses">Expenses</a>
+        <a href="#account">Account</a>
+    </nav>
+
+    <div class="container">
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Welcome to your personal finance management dashboard. Here you can manage your budget, track expenses, and view account details.</p>
+        </section>
+
+        <section id="budget">
+            <h2>Budget</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Planned Amount</th>
+                        <th>Actual Amount</th>
+                        <th>Variance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>₹1,000</td>
+                        <td>₹1,000</td>
+                        <td>₹0</td>
+                        <td>
+                            <form action="#">
+                                <input type="number" name="planned" value="1000" />
+                                <input type="number" name="actual" value="1000" />
+                                <button type="submit">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Groceries</td>
+                        <td>₹300</td>
+                        <td>₹350</td>
+                        <td>−₹50</td>
+                        <td>
+                            <form action="#">
+                                <input type="number" name="planned" value="300" />
+                                <input type="number" name="actual" value="350" />
+                                <button type="submit">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Utilities</td>
+                        <td>₹150</td>
+                        <td>₹140</td>
+                        <td>₹10</td>
+                        <td>
+                            <form action="#">
+                                <input type="number" name="planned" value="150" />
+                                <input type="number" name="actual" value="140" />
+                                <button type="submit">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="expenses">
+            <h2>Expenses</h2>
+            <ul>
+                <li><strong>Rent:</strong> ₹1,000</li>
+                <li><strong>Groceries:</strong> ₹350</li>
+                <li><strong>Utilities:</strong> ₹140</li>
+                <li><strong>Transportation:</strong> ₹80</li>
+            </ul>
+        </section>
+
+        <section id="account">
+            <h2>Account Details</h2>
+            <p class="bordered">Your current account balance is <strong>₹5,000</strong>.</p>
+        </section>
+    </div>
+</body>
+</html>
